@@ -29,7 +29,7 @@ int main(){
 	string password;
 	int i=0, saldo, jawaban;
 	while (i<3){
-		cout<< "Masukkan password : "<<endl;
+		cout<< "Masukkan password : ";
 		cin>> password;
 		if (password == "DKP24"){
 			cout<<"\nSelamat datang DKP24, total saldo anda sebesar Rp. 100.000,00"<<endl;
@@ -37,7 +37,7 @@ int main(){
 		}
 		else {
 			i++;
-			cout<< "Password salah "<<endl;
+			cout<< "\nPassword salah "<<endl;
 		}
 	}
 	if (i==0 || i==1 ||i==2){
