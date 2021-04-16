@@ -21,3 +21,20 @@ int bayar (int saldo, int harga){
 	}
 }
 
+
+int main(){
+	string password;
+	int i=0, saldo, harga, jawaban;
+	while (i<3){
+		cout<< "Masukkan password : "<<endl;
+		cin>> password;
+		if (password == "DKP24"){
+			cout<<"Selamat datang DKP24, total saldo anda sebesar Rp. 100.000,00"<<endl;
+			break;
+		}
+		else {
+			i++;
+			cout<< "Password salah "<<endl;
+		}
+	}
+	
