@@ -37,7 +37,7 @@ int main(){
 		}
 		else {
 			i++;
-			cout<< "\nPassword salah "<<endl;
+			cout<< "Password salah "<<endl;
 		}
 	}
 	if (i==0 || i==1 ||i==2){
