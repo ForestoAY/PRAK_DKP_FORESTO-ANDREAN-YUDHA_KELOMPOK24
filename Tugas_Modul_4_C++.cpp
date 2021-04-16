@@ -27,7 +27,7 @@ int bayar (int saldo, int harga){
 
 int main(){
 	string password;
-	int i=0, saldo, harga, jawaban;
+	int i=0, saldo, jawaban;
 	while (i<3){
 		cout<< "Masukkan password : "<<endl;
 		cin>> password;
