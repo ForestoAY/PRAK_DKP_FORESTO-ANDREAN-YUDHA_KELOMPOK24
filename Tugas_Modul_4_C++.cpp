@@ -13,7 +13,7 @@ int bayar (int saldo, int harga){
 		return saldo - harga;
 	}
 	else if (saldo < harga) {
-		cout<< "Uang tidak cukup, karena harga sebesar Rp ";
+		cout<< "Uang tidak cukup, karena harga sebesar Rp. ";
 		return harga;
 	}
 	else {
@@ -29,7 +29,7 @@ int main(){
 		cout<< "Masukkan password : "<<endl;
 		cin>> password;
 		if (password == "DKP24"){
-			cout<<"Selamat datang DKP24, total saldo anda sebesar Rp. 100.000,00"<<endl;
+			cout<<"\nSelamat datang DKP24, total saldo anda sebesar Rp. 100.000,00"<<endl;
 			break;
 		}
 		else {
@@ -37,4 +37,21 @@ int main(){
 			cout<< "Password salah "<<endl;
 		}
 	}
-	
+	if (i==0 || i==1 ||i==2){
+		info ("DKP 24");
+		cout<< "Pilihan Anda : ";
+		cin>> jawaban;
+		switch (jawaban){
+			case 1:
+				cout<< "Pesanan Berhasil, Saldo Anda tersisa Rp." <<bayar(100000, 25000)<<endl;
+				break;
+			case 2:
+				cout<< "Pesanan Berhasil, Saldo Anda tersisa Rp." <<bayar(100000, 15000)<<endl;
+				break;
+			case 3:
+				cout<<bayar(100000, 1000000)<<endl;
+				break;
+			default:
+				cout<< "Maaf, Pemesanan Gagal"<<endl;
+				break;
+		}		
