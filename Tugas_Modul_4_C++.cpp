@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void info (string username){
+class menu{
+public:
+	void info (string username){
 	cout<< "Halo "<<username<< " Pesan orderan"<<endl;
 	cout<< "(1) Ayam KFC - Rp 25.000,00"<<endl;
 	cout<< "(2) Ayam geprek - Rp 15.000,00"<<endl;
 	cout<< "(3) Caviar eggs - Rp 1.000.000"<<endl;
-}
+	}
+};
 
 int bayar (int saldo, int harga){
 	if (saldo >= harga){
@@ -38,7 +41,8 @@ int main(){
 		}
 	}
 	if (i==0 || i==1 ||i==2){
-		info ("DKP 24");
+		menu pembuka;
+		pembuka.info("DKP24");
 		cout<< "Pilihan Anda : ";
 		cin>> jawaban;
 		switch (jawaban){
