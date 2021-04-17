@@ -48,7 +48,7 @@ int main(){
 		switch(jawaban){
 			case 1:
 				cout << "Mau beli berapa kak ayamnya?" << endl;
-			cout << "Jumlah : ";
+				cout << "Jumlah : ";
 				cin >> jumlah;
 				switch (jumlah) {
 				case 1:
@@ -70,7 +70,7 @@ int main(){
 				break;
 			case 2:
 				cout << "Ayam gepreknya mau beli berapa kak?" << endl;
-			cout << "Jumlah : ";
+				cout << "Jumlah : ";
 				cin >> jumlah;
 				switch (jumlah) {
 				case 1:
