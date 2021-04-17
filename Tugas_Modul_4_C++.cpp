@@ -32,33 +32,35 @@ int main(){
 		cout<< "Masukkan password : ";
 		cin>> password;
 		if (password == "DKP24"){
-			cout<<"\nSelamat datang DKP24, total saldo anda sebesar Rp 1.000.000,00"<<endl;
-			if (i < 3) {
-				menu pembuka;
-				pembuka.info("DKP 24");
-				cout << "Pilihan Anda : ";
-				cin >> jawaban;
-				switch (jawaban) {
-				case 1:
-					cout << "Pesanan Berhasil, Saldo Anda tersisa Rp." << bayar(1000000, 25000) << endl;
-					break;
-				case 2:
-					cout << "Pesanan Berhasil, Saldo Anda tersisa Rp." << bayar(1000000, 15000) << endl;
-					break;
-				case 3:
-					cout << "Pesanan Berhasil, Saldo Anda tersisa Rp." << bayar(1000000, 1000000) << endl;
-					break;
-				default:
-					cout << "Maaf, Pemesanan Gagal" << endl;
-					break;
-				}
-				break;
+			cout<<"\nSelamat datang DKP24, total saldo anda sebesar Rp. 100.000,00"<<endl;
+			break;
 		}
 		else {
 			i++;
 			cout<< "Password salah "<<endl;
-			break;
+		}	
+	}
+	if (i <3){
+		menu pembuka;
+		pembuka.info("DKP24");
+		cout<< "Jawaban : ";
+		cin>> jawaban;
+		switch(jawaban){
+			case 1:
+				cout<< "Pesanan berhasil, saldo tinggal Rp. "<<bayar(100000, 25000)<<endl;
+				break;
+			case 2:
+				cout<< "Pesanan berhasil, saldo tinggal Rp. "<<bayar(100000, 15000)<<endl;
+				break;
+			case 3:
+				cout<<bayar(100000, 1000000)<<endl;
+				break;
+			default:
+				cout<< "Gagal memesan"<<endl;
+				break;
 		}
-		}		
+	}
+	else {
+		cout<< "Password masih salah, silahkan hubungi kontak CS kami"<<endl;
 	}
 }
